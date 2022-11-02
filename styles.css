@@ -231,16 +231,7 @@ main {
   color: #828282;
 }
 
-.solutions {
-  min-height: calc(100vh - 150px);
-
-  padding: 64px 0;
-
-  background: url('/imgs/background.jpg');
-  background-size: cover;
-}
-
-.solutions > h3 {
+.section-title {
   position: relative;
 
   font-style: normal;
@@ -254,7 +245,7 @@ main {
   margin-bottom: 50px;
 }
 
-.solutions > h3::before {
+.section-title::before {
   content: "";
   position: absolute;
   top: 72%;
@@ -264,6 +255,15 @@ main {
   height: 50px;
 
   background: url('/imgs/logo.svg');
+  background-size: cover;
+}
+
+.solutions {
+  min-height: calc(100vh - 150px);
+
+  padding: 64px 0;
+
+  background: url('/imgs/background.jpg');
   background-size: cover;
 }
 
@@ -304,4 +304,76 @@ main {
   line-height: 26px;
   text-align: center;
   color: #828282;
+}
+
+.differences {
+  min-height: calc(100vh - 150px);
+
+  padding: 64px 0;
+}
+
+.differences > .row {
+  padding: 96px;
+  gap: 124px;
+}
+
+.differences > .row > .column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.differences > .row > .column > .item {
+  display: flex;
+  gap: 8px;
+}
+
+.differences > .row > .column > .item > span {
+  min-width: 110px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 144px;
+  line-height: 110px;
+  text-transform: uppercase;
+  text-align: center;
+
+  background: url('imgs/button-mask.svg'), linear-gradient(94.77deg, #48B760 0%, #6BB748 100%);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.differences > .row > .column > .item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.differences > .row > .column > .item h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+
+  color: #4F4F4F;
+}
+
+.differences > .row > .column > .item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #828282;
+}
+
+.differences > .button-wrapper {
+  flex: 1;
+  
+  display: flex;
+  justify-content: center;
 }
